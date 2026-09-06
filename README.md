@@ -20,7 +20,7 @@ computational cost.
 
 **DataSEC** : Dataset for Sound Event Classification of Environmental Noise
 - Source: [Zenodo, DOI 10.5281/zenodo.15340689](https://doi.org/10.5281/zenodo.15340689)
-- ~4,292–5,024 real-world recordings, ~18–23 hours total
+- ~4,292-5,024 real-world recordings, ~18-23 hours total
 - 22 environmental sound classes, 28 subclasses
 - Mono-channel `.wav`, 44.1 kHz, one sound event per recording
 
