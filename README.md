@@ -27,7 +27,7 @@ computational cost.
 ## Models
 
 | Model | Input representation |
-|---|---|---|
+|---|---|
 | SincNet | Raw waveform, learnable sinc band-pass filters |  
 | EfficientNet-B0 | Log-Mel spectrogram |
 | CRNN-BiGRU | CNN + bidirectional GRU over spectral features | 
