@@ -26,12 +26,12 @@ computational cost.
 
 ## Models
 
-| Model | Input representation | Owner |
+| Model | Input representation |
 |---|---|---|
-| SincNet | Raw waveform, learnable sinc band-pass filters | Kaaviya Kalyanakumar |
-| EfficientNet-B0 | Log-Mel spectrogram | Venisa Ivan Tellis |
-| CRNN-BiGRU | CNN + bidirectional GRU over spectral features | Harshini Rebala |
-| Audio Spectrogram Transformer (AST) | Self-attention over spectrogram patches | Ridhima Verma |
+| SincNet | Raw waveform, learnable sinc band-pass filters |  
+| EfficientNet-B0 | Log-Mel spectrogram |
+| CRNN-BiGRU | CNN + bidirectional GRU over spectral features | 
+| Audio Spectrogram Transformer (AST) | Self-attention over spectrogram patches | 
 
 
 ## Shared evaluation protocol
