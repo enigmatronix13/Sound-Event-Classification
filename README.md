@@ -1,13 +1,13 @@
 # Sound Event Classification
 
-Comparative study of four deep learning architectures — **SincNet**, **EfficientNet-B0**,
-**CRNN-BiGRU**, and **Audio Spectrogram Transformer (AST)** — for environmental sound event
+Comparative study of four deep learning architectures - **SincNet**, **EfficientNet-B0**,
+**CRNN-BiGRU**, and **Audio Spectrogram Transformer (AST)** - for environmental sound event
 classification, built for the ICT 4442 Deep Learning Mini Project.
 
 ## Project overview
 
-Environmental sound classification aims to automatically identify sound events — vehicles,
-aircraft, animals, human activity, mechanical equipment — in real-world audio. Unlike speech or
+Environmental sound classification aims to automatically identify sound events like vehicles,
+aircraft, animals, human activity, mechanical equipment, in real-world audio. Unlike speech or
 music, these sounds vary widely in duration, frequency content, and background conditions, making
 them a challenging classification problem.
 
@@ -18,7 +18,7 @@ computational cost.
 
 ## Dataset
 
-**DataSEC** — Dataset for Sound Event Classification of Environmental Noise
+**DataSEC** : Dataset for Sound Event Classification of Environmental Noise
 - Source: [Zenodo, DOI 10.5281/zenodo.15340689](https://doi.org/10.5281/zenodo.15340689)
 - ~4,292–5,024 real-world recordings, ~18–23 hours total
 - 22 environmental sound classes, 28 subclasses
