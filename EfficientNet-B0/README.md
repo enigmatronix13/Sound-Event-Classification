@@ -36,6 +36,4 @@ mean/std normalisation, 1→3 channels, 224×224; SpecAugment masking, random sh
 ImageNet-pretrained EfficientNet-B0, dropout 0.2, AdamW (head 1e-3, backbone 1e-4, wd 1e-2),
 batch 32, 30 epochs, cosine schedule, early stopping on val macro-F1, seed 42.
 
-## Academic integrity note
-Parts of this code were written with LLM assistance (Claude). State this, and where it was used,
-in the report as required by the course guidelines.
+
