@@ -1,0 +1,7 @@
+Accuracy: 0.7021
+Macro-precision: 0.6515
+Macro-recall: 0.7008
+Macro-F1: 0.6435
+Parameters: 322,806
+Training time: 0.3 min (CPU)
+Train/val/test clips: 214/46/47
