@@ -4,6 +4,8 @@ from pathlib import Path
 
 import numpy as np
 import soundfile as sf
+
+from .data_prep import safe_path
 import torch
 import torchaudio
 from torch.utils.data import Dataset
@@ -39,6 +41,8 @@ class LogMelDataset(Dataset):
         self.cfg = cfg
         self.train = train
         self.mean, self.std = float(mean), float(std)
+        if not np.isfinite([self.mean, self.std]).all() or self.std <= 0:
+            raise ValueError("Normalization needs a finite mean and positive standard deviation.")
         self._resamplers = {}
         self.mel = torchaudio.transforms.MelSpectrogram(
             sample_rate=cfg.sample_rate, n_fft=cfg.n_fft, hop_length=cfg.hop_length,
@@ -51,7 +55,9 @@ class LogMelDataset(Dataset):
         return len(self.df)
 
     def _load(self, rel_path):
-        wav, sr = sf.read(str(self.data_dir / rel_path), dtype="float32", always_2d=True)
+        wav, sr = sf.read(str(safe_path(self.data_dir, rel_path)), dtype="float32", always_2d=True)
+        if not len(wav) or not np.isfinite(wav).all():
+            raise ValueError(f"Empty/non-finite audio: {rel_path}")
         wav = torch.from_numpy(wav.mean(axis=1))                 # mono
         if sr != self.cfg.sample_rate:
             if sr not in self._resamplers:

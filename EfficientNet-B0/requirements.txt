@@ -1,9 +1,9 @@
-torch>=2.1
-torchvision>=0.16
-torchaudio>=2.1
+torch>=2.3,<3
+torchvision>=0.18,<1
+torchaudio>=2.3,<3
 soundfile>=0.12
-numpy
-pandas
-scikit-learn
-matplotlib
-tqdm
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+matplotlib>=3.8
+tqdm>=4.66
