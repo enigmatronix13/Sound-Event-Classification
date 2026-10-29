@@ -6,7 +6,7 @@ This extends the existing Model 2 starter with a notebook, audited data preparat
 
 ## Start here
 
-Open [`EfficientNet_B0_DataSEC.ipynb`](EfficientNet_B0_DataSEC.ipynb) in Jupyter or Google Colab. In Colab select a GPU runtime, run setup, and set the dataset and shared-manifest paths. It calls the same Python modules described below, so there is only one training implementation to maintain.
+Open [`EfficientNet_B0_DataSEC.ipynb`](EfficientNet_B0_DataSEC.ipynb) in Jupyter or Google Colab. In Kaggle or Colab select a GPU runtime and run setup. If you have not added DataSEC, enable Internet and set `DOWNLOAD_DATASEC = True` in section 2. The notebook downloads the version-3 ZIP, verifies its checksum, extracts the audio and sets `DATA_ROOT`. Otherwise it can detect an attached Kaggle dataset or accept an explicit audio-folder path. Set the shared-manifest paths afterward. It calls the same Python modules described below, so there is only one training implementation to maintain.
 
 For a local terminal, start inside `EfficientNet-B0/`:
 
