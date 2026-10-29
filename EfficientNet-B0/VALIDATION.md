@@ -22,3 +22,7 @@ Run the suite from this folder with `python -m pytest -q` after installing requi
 ## Still pending
 
 Full DataSEC acquisition/audit on the team's agreed release, agreed shared manifest, full baseline and ablation training, CUDA mixed-precision execution, final held-out metrics, and the complete notebook workflow on real data. Synthetic test outputs are temporary test fixtures and are **not** committed as project results. No real accuracy/F1 claim or trained DataSEC checkpoint is supplied.
+
+## Kaggle dataset setup fix — 29 October 2026
+
+Added an optional DataSEC v3 download, checksum verification, extraction and 22-parent-class folder discovery to the notebook. Seven targeted tests passed using small local ZIP fixtures: download/extraction/reuse, checksum failure, unsafe archive paths, offline error guidance, ambiguous inputs, nested subclasses and missing/incomplete data. The updated notebook schema and 13 code cells were validated. The 6.4 GB dataset was not downloaded in this local verification; a full download in the user's Kaggle session is still required.
